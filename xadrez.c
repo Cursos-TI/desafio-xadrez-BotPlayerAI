@@ -59,3 +59,32 @@
     printf("\nMovimentação concluída!\n");
     return 0;
 }
+
+🏅 Nível Aventureiro
+#include <stdio.h>
+
+    int
+    main()
+{
+    int x = 4, y = 4; // Posição inicial do cavalo
+
+    // Movendo 2 casas para baixo (usando for)
+    for (int i = 0; i < 2; i++)
+    {
+        x++;
+        printf("Movendo para (%d, %d)\n", x, y);
+    }
+
+    // Movendo 1 casa para a esquerda (usando while)
+    int i = 0;
+    while (i < 1)
+    {
+        y--;
+        printf("Movendo para (%d, %d)\n", x, y);
+        i++;
+    }
+
+    printf("Posição final do cavalo: (%d, %d)\n", x, y);
+
+    return 0;
+}
